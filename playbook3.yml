@@ -1,0 +1,9 @@
+---
+- hosts: node1
+  tasks:
+   - name: Print simple text
+     vars:
+       msg: 
+         Text: Hello this is getting printed on node1
+     debug:
+       msg: "{{msg}}"
